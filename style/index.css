@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: white;
+}
+
+.container{
+  height: 100vh;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  
+  display: flex;
+  justify-content: center;
+  
+  background: linear-gradient(#e91e63, #ffc107);
+  
+}
+
+.bodyCal{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 15px;
+  padding: 15px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  transition: 0.5s;
+  
+}
+
+/**
+styling of buttons and effects
+**/
+
+.button{
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  
+  background: transparent;
+}
+
+.button:hover{
+  transition: 0s;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.button:active{
+  background: #14ff47;
+  color: #192f00;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/**
+splash screen
+**/
+
+.display{
+  height: 50px;
+  
+  border-bottom: 1px solid black;
+  
+}
+
+.display > p{
+   width: 100%;
+   height: 100%;
+   
+   background: transparent;
+   border: none;
+   color: black;
+   text-align: right;
+   
+   font-size: 30px;
+}
